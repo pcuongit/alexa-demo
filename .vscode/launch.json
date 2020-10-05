@@ -16,7 +16,7 @@
                 "3001",
                 // name of your nodejs main skill file
                 "--skillEntryFile",
-                "${workspaceRoot}/lambda/custom/build/src/index.js",
+                "${workspaceRoot}/lambda/custom/build/index.js",
                 // name of your lambda handler
                 "--lambdaHandler",
                 "handler"

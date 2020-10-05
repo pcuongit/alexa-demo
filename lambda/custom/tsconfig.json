@@ -9,6 +9,9 @@
     "intents/*.ts",
     "interceptors/*.ts",
     "utilities/*.ts",
-    "index.ts"
+    "index.ts",
+    "api/*.ts",
+    "interfaces/*.ts",
+    "environment/*.ts"
   ]
 }

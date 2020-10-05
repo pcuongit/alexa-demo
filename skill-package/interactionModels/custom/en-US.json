@@ -26,6 +26,15 @@
                     "samples": ["hello sunabar"]
                 },
                 {
+                    "name": "GetInfoIntent",
+                    "slots": [],
+                    "samples": [
+                        "can you tell me about my sunabar account",
+                        "get information of my sunabar account",
+                        "tell me about my sunabar account"
+                    ]
+                },
+                {
                     "name": "AMAZON.NavigateHomeIntent",
                     "samples": []
                 },

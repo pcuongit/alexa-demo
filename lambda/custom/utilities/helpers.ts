@@ -1,4 +1,5 @@
 import { HandlerInput } from 'ask-sdk-core';
+import { Response } from 'node-fetch';
 import { RequestTypes } from './constants';
 
 /**
@@ -37,4 +38,26 @@ export function IsType(
     }
   }
   return false;
+}
+
+export function handlePromise(
+  promise: Promise<Response>,
+  isArrayBuffer = false
+) {
+  promise
+    .then(
+      (response): Promise<string | ArrayBuffer> => {
+        if (response.type === 'basic') {
+          // for test only
+        }
+        if (isArrayBuffer) {
+          return response.arrayBuffer();
+        } else {
+          return response.text();
+        }
+      }
+    )
+    .then((text: string | ArrayBuffer) => {
+      console.log(text);
+    });
 }

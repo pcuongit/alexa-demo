@@ -8,12 +8,14 @@ import { helloWorld } from './intents/HelloWorld';
 import { errorProcessor } from './errors/ErrorProcessor';
 import { sessionEnded } from './intents/SessionEnded';
 import { localizationRequestInterceptor } from './interceptors/LocalizationRequestInterceptor';
+import { getInfo } from './intents/GetInfo';
 
 export const handler = Alexa.SkillBuilders.custom()
   .addRequestHandlers(
     // Default intents
     launch,
     helloWorld,
+    getInfo,
     help,
     stop,
     sessionEnded,

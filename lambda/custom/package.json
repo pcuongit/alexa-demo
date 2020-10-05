@@ -7,11 +7,12 @@
     "clean": "gts clean",
     "compile": "tsc -p .",
     "build-final": "cpy package.json build && cd build/ && npm install --production",
+    "ask-deploy": "rd -r ../../.ask/lambda && cd ../.. && ask deploy",
     "test": "echo \"No test specified yet\" && exit 0",
     "lint-check": "gts check",
     "lint-clean": "gts clean",
     "lint-fix": "gts fix",
-    "build": "npm run clean && npm run test && npm run lint-check && npm run compile && npm run build-final",
+    "build": "npm run clean && npm run test && npm run lint-check && npm run compile && npm run build-final && npm run ask-deploy",
     "check": "gts check",
     "fix": "gts fix",
     "prepare": "npm.cmd run compile",
@@ -21,11 +22,13 @@
   "author": "Xavier Portilla Edo",
   "license": "Apache-2.0",
   "dependencies": {
+    "@types/node-fetch": "^2.5.7",
     "ask-sdk-core": "^2.7.0",
     "ask-sdk-model": "^1.19.0",
     "aws-sdk": "^2.326.0",
     "i18next": "^15.0.5",
-    "i18next-sprintf-postprocessor": "^0.2.2"
+    "i18next-sprintf-postprocessor": "^0.2.2",
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
     "@types/node": "^10.0.3",
