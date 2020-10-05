@@ -9,8 +9,8 @@
               "iamRole": "arn:aws:iam::981815590265:role/ask-lambda-skill-sunabar-1601898133420",
               "lambda": {
                 "arn": "arn:aws:lambda:ap-southeast-1:981815590265:function:ask-skill-sunabar-default-default-1601898144017",
-                "lastModified": "2020-10-05T15:58:13.683+0000",
-                "revisionId": "adaf1a91-1e93-4de9-9937-cae98b142e01"
+                "lastModified": "2020-10-05T16:24:44.735+0000",
+                "revisionId": "16eede83-7814-4b93-8618-7a62a4dd7707"
               }
             }
           }
@@ -22,7 +22,7 @@
       },
       "code": {
         "default": {
-          "lastDeployHash": "DcJfr91yefjTr6FAS3RjpVpd6Kw="
+          "lastDeployHash": "N+uZSzJewBz5MYiX8a4zSHv1W5g="
         }
       }
     }
