@@ -1,0 +1,7 @@
+node_modules/
+package-lock.json
+.DS_Store
+.ask/lambda
+lambda/custom/build
+lambda/custom/node_modules
+lambda/custom/package-lock.json
