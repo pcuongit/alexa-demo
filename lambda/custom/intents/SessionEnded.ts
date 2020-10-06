@@ -9,10 +9,12 @@ export const sessionEnded: RequestHandler = {
   },
   handle(handlerInput: HandlerInput) {
     const speechText = i18n.t(Strings.GOODBYE_MSG);
-
-    return handlerInput.responseBuilder
-      .speak(speechText)
-      .withSimpleCard(i18n.t(Strings.SKILL_NAME), speechText)
-      .getResponse();
+    console.log('handle -> speechText', speechText);
+    return (
+      handlerInput.responseBuilder
+        .speak(speechText)
+        // .withSimpleCard(i18n.t(Strings.SKILL_NAME), speechText)
+        .getResponse()
+    );
   },
 };

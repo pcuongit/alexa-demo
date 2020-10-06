@@ -11,10 +11,11 @@ export const errorProcessor: ErrorHandler = {
     return true;
   },
   handle(handlerInput: HandlerInput, error: Error) {
-    console.log('Error handled: ${error.message}');
+    console.log(`Error handled: ${error.message}`);
 
     return handlerInput.responseBuilder
       .speak(i18n.t(Strings.ERROR_MSG))
+      .reprompt(i18n.t(Strings.ERROR_MSG))
       .getResponse();
   },
 };

@@ -8,8 +8,8 @@ export const helloWorld: RequestHandler = {
     return IsIntent(handlerInput, IntentTypes.HelloWorld);
   },
   handle(handlerInput: HandlerInput) {
-    const speechText = i18n.t(Strings.HELLO_MSG);
-
+    // const speechText = i18n.t(Strings.HELLO_MSG);
+    const speechText = 'speechText';
     return handlerInput.responseBuilder
       .speak(speechText)
       .withSimpleCard(i18n.t(Strings.SKILL_NAME), speechText)

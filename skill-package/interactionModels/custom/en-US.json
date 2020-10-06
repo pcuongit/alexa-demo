@@ -23,7 +23,7 @@
                 {
                     "name": "HelloWorldIntent",
                     "slots": [],
-                    "samples": ["hello sunabar"]
+                    "samples": ["hello sunabar support"]
                 },
                 {
                     "name": "GetInfoIntent",
@@ -44,10 +44,41 @@
                 },
                 {
                     "name": "LaunchRequest",
-                    "samples": []
+                    "slots": [
+                        {
+                            "name": "app_name",
+                            "type": "app_name"
+                        }
+                    ],
+                    "samples": [
+                        "open {app_name}",
+                        "Alexa open {app_name}",
+                        "open cuongsp"
+                    ]
                 }
             ],
-            "types": []
+            "types": [
+                {
+                    "name": "app_name",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "sunabar support"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sunabar help center"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sunabar"
+                            }
+                        }
+                    ]
+                }
+            ]
         }
     }
 }

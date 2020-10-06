@@ -1,5 +1,4 @@
 import { HandlerInput } from 'ask-sdk-core';
-import { Response } from 'node-fetch';
 import { RequestTypes } from './constants';
 
 /**
@@ -39,25 +38,25 @@ export function IsType(
   }
   return false;
 }
-
-export function handlePromise(
-  promise: Promise<Response>,
-  isArrayBuffer = false
-) {
-  promise
-    .then(
-      (response): Promise<string | ArrayBuffer> => {
-        if (response.type === 'basic') {
-          // for test only
-        }
-        if (isArrayBuffer) {
-          return response.arrayBuffer();
-        } else {
-          return response.text();
-        }
-      }
-    )
-    .then((text: string | ArrayBuffer) => {
-      console.log(text);
-    });
-}
+// // Generic function to check interface availability on calling device
+// function supportsInterface(handlerInput: HandlerInput, interfaceName: string) {
+//   const interfaces: SupportedInterfaces =
+//     (((handlerInput.requestEnvelope.context || {}).System || {}).device || {})
+//       .supportedInterfaces || {};
+//   return (
+//     interfaces["Alexa.Presentation.APL"] !== null &&
+//     interfaces[interfaceName] !== undefined
+//   );
+// }
+// // Check for AudioPlayer Interface availability on calling device
+// function supportsAudioPlayer(handlerInput: HandlerInput) {
+//   return supportsInterface(handlerInput, 'AudioPlayer');
+// }
+// // Check for APL Interface availability on calling device
+// function supportsAPL(handlerInput: HandlerInput) {
+//   return supportsInterface(handlerInput, 'Alexa.Presentation.APL');
+// }
+// // Check for Display Interface availability on calling device
+// function supportsDisplay(handlerInput: HandlerInput) {
+//   return supportsInterface(handlerInput, 'Display');
+// }

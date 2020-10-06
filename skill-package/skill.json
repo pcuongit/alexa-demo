@@ -6,8 +6,7 @@
           "summary": "Sample Short Description",
           "examplePhrases": [
             "Alexa open sunabar support",
-            "hello sunabar support",
-            "help sunabar support"
+            "hello sunabar support"
           ],
           "name": "skill-sunabar",
           "description": "Sample Full Description"

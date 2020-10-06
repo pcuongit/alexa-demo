@@ -12,9 +12,11 @@ export const reflector: RequestHandler = {
       intentName: getIntentName(handlerInput.requestEnvelope),
     });
 
-    return handlerInput.responseBuilder
-      .speak(speechText)
-      .withSimpleCard(i18n.t(Strings.SKILL_NAME), speechText)
-      .getResponse();
+    return (
+      handlerInput.responseBuilder
+        .speak(speechText)
+        // .withSimpleCard(i18n.t(Strings.SKILL_NAME), speechText)
+        .getResponse()
+    );
   },
 };

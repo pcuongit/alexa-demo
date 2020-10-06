@@ -9,8 +9,8 @@
               "iamRole": "arn:aws:iam::981815590265:role/ask-lambda-skill-sunabar-1601898133420",
               "lambda": {
                 "arn": "arn:aws:lambda:ap-southeast-1:981815590265:function:ask-skill-sunabar-default-default-1601898144017",
-                "lastModified": "2020-10-05T16:24:44.735+0000",
-                "revisionId": "16eede83-7814-4b93-8618-7a62a4dd7707"
+                "lastModified": "2020-10-06T10:35:34.496+0000",
+                "revisionId": "3bf99b05-0e41-4348-8bbb-0c72c3dab085"
               }
             }
           }
@@ -18,11 +18,11 @@
       },
       "skillId": "amzn1.ask.skill.a7785030-d7b2-4420-b06a-aae4ce3af7ad",
       "skillMetadata": {
-        "lastDeployHash": "31iCmhHjqYZdH4IyedPUaa2c8KA="
+        "lastDeployHash": "RoQwjND3vBIPCJPQzXE86fwiHyo="
       },
       "code": {
         "default": {
-          "lastDeployHash": "N+uZSzJewBz5MYiX8a4zSHv1W5g="
+          "lastDeployHash": "4D51dMUvP2Q8BQ8MoHvqKC9egus="
         }
       }
     }
